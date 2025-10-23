@@ -1,0 +1,46 @@
+Necesito mejorar la efectividad de la estrategia de pronósticos de +2.5 goles en mi app Android. 
+
+ANÁLISIS ACTUAL:
+- Uso porcentajes fijos de Over 2.5 por equipo
+- Factor de liga multiplicativo simple
+- Datos estáticos sin actualización
+
+MEJORAS REQUERIDAS:
+
+1. **ALGORITMO MÁS INTELIGENTE:**
+   - Incluir promedio de goles por partido de cada equipo
+   - Considerar últimos 5-10 partidos (forma reciente)
+   - Factor de local/visitante
+   - Enfrentamientos históricos entre equipos
+
+2. **MÁS VARIABLES ESTADÍSTICAS:**
+   - Goles a favor y en contra
+   - Porcentaje de posesión
+   - Tiros a puerta por partido
+   - Lesiones de jugadores clave
+
+3. **SISTEMA DE PUNTUACIÓN:**
+   - Ponderar variables por importancia
+   - Umbral mínimo de confianza
+   - Categorías: ALTA/MEDIA/BAJA probabilidad
+
+4. **ACTUALIZACIÓN EN TIEMPO REAL:**
+   - Conexión a API de estadísticas
+   - Base de datos local actualizable
+   - Notificaciones de cambios importantes
+
+5. **INTERFAZ MEJORADA:**
+   - Mostrar razones del pronóstico
+   - Historial de aciertos
+   - Comparativa entre equipos
+
+IMPLEMENTA en Kotlin:
+- Clases extendidas para Team con más estadísticas
+- Algoritmo de cálculo mejorado
+- Sistema de actualización de datos
+- UI que muestre el análisis detallado
+
+si es posible: Implementa conexión a API de fútbol (Football-Data.org o API-Sports) para obtener estadísticas actualizadas de partidos en tiempo real y calcular probabilidades dinámicas de +2.5 goles.
+
+si es posible: Crea un modelo de predicción usando ML Kit que analice históricos de equipos, forma reciente, y factores contextuales para predecir +2.5 goles con mayor precisión.
+si es posible: Diseña una pantalla que muestre el análisis detallado: porcentaje calculado, factores considerados, comparativa de equipos, y historial de efectividad del algoritmo.
