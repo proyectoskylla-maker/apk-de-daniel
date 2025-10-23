@@ -1,0 +1,197 @@
+package com.basketpredictor.analisis25goles.data
+
+object TeamsRepository {
+    
+    fun getAllTeams(): List<Team> {
+        return listOf(
+            // BUNDESLIGA
+            Team("Bayern Munich", League.BUNDESLIGA, 20, 15, 5),
+            Team("Dortmund", League.BUNDESLIGA, 20, 12, 8),
+            Team("RB Leipzig", League.BUNDESLIGA, 20, 14, 6),
+            Team("Stuttgart", League.BUNDESLIGA, 20, 13, 7),
+            Team("Bayer Leverkusen", League.BUNDESLIGA, 20, 16, 4),
+            Team("FC Koln", League.BUNDESLIGA, 20, 8, 12),
+            Team("Union Berlin", League.BUNDESLIGA, 20, 9, 11),
+            Team("Eintracht Frankfurt", League.BUNDESLIGA, 20, 11, 9),
+            Team("Freiburg", League.BUNDESLIGA, 20, 10, 10),
+            Team("Hamburger SV", League.BUNDESLIGA, 20, 7, 13),
+            Team("St. Pauli", League.BUNDESLIGA, 20, 6, 14),
+            Team("Hoffenheim", League.BUNDESLIGA, 20, 12, 8),
+            Team("Werder Bremen", League.BUNDESLIGA, 20, 9, 11),
+            Team("Augsburg", League.BUNDESLIGA, 20, 8, 12),
+            Team("Wolfsburg", League.BUNDESLIGA, 20, 10, 10),
+            Team("Mainz", League.BUNDESLIGA, 20, 7, 13),
+            Team("Heidenheim", League.BUNDESLIGA, 20, 5, 15),
+            Team("B. Monchengladbach", League.BUNDESLIGA, 20, 11, 9),
+            
+            // PREMIER LEAGUE
+            Team("Arsenal", League.PREMIER_LEAGUE, 20, 14, 6),
+            Team("Liverpool", League.PREMIER_LEAGUE, 20, 16, 4),
+            Team("Tottenham", League.PREMIER_LEAGUE, 20, 13, 7),
+            Team("Bournemouth", League.PREMIER_LEAGUE, 20, 9, 11),
+            Team("Manchester City", League.PREMIER_LEAGUE, 20, 15, 5),
+            Team("Crystal Palace", League.PREMIER_LEAGUE, 20, 8, 12),
+            Team("Chelsea", League.PREMIER_LEAGUE, 20, 12, 8),
+            Team("Everton", League.PREMIER_LEAGUE, 20, 7, 13),
+            Team("Sunderland", League.PREMIER_LEAGUE, 20, 6, 14),
+            Team("Manchester Utd.", League.PREMIER_LEAGUE, 20, 11, 9),
+            Team("Newcastle", League.PREMIER_LEAGUE, 20, 10, 10),
+            Team("Brighton", League.PREMIER_LEAGUE, 20, 9, 11),
+            Team("Aston Villa", League.PREMIER_LEAGUE, 20, 13, 7),
+            Team("Fulham", League.PREMIER_LEAGUE, 20, 8, 12),
+            Team("Leeds", League.PREMIER_LEAGUE, 20, 7, 13),
+            Team("Brentford", League.PREMIER_LEAGUE, 20, 9, 11),
+            Team("Nottingham", League.PREMIER_LEAGUE, 20, 6, 14),
+            Team("Burnley", League.PREMIER_LEAGUE, 20, 5, 15),
+            Team("West Ham", League.PREMIER_LEAGUE, 20, 8, 12),
+            Team("Wolves", League.PREMIER_LEAGUE, 20, 7, 13),
+            
+            // SERIE A
+            Team("Napoli", League.SERIE_A, 20, 12, 8),
+            Team("AS Roma", League.SERIE_A, 20, 10, 10),
+            Team("AC Milan", League.SERIE_A, 20, 11, 9),
+            Team("Inter", League.SERIE_A, 20, 13, 7),
+            Team("Juventus", League.SERIE_A, 20, 9, 11),
+            Team("Atalanta", League.SERIE_A, 20, 14, 6),
+            Team("Bologna", League.SERIE_A, 20, 8, 12),
+            Team("Como", League.SERIE_A, 20, 6, 14),
+            Team("Sassuolo", League.SERIE_A, 20, 7, 13),
+            Team("Cremonese", League.SERIE_A, 20, 5, 15),
+            Team("Cagliari", League.SERIE_A, 20, 8, 12),
+            Team("Udinese", League.SERIE_A, 20, 9, 11),
+            Team("Lazio", League.SERIE_A, 20, 10, 10),
+            Team("Parma", League.SERIE_A, 20, 7, 13),
+            Team("Lecce", League.SERIE_A, 20, 6, 14),
+            Team("Torino", League.SERIE_A, 20, 8, 12),
+            Team("Fiorentina", League.SERIE_A, 20, 11, 9),
+            Team("Verona", League.SERIE_A, 20, 7, 13),
+            Team("Genoa", League.SERIE_A, 20, 6, 14),
+            Team("Pisa", League.SERIE_A, 20, 5, 15),
+            
+            // LA LIGA
+            Team("Real Madrid", League.LA_LIGA, 20, 15, 5),
+            Team("Barcelona", League.LA_LIGA, 20, 13, 7),
+            Team("Villareal", League.LA_LIGA, 20, 11, 9),
+            Team("Betis", League.LA_LIGA, 20, 9, 11),
+            Team("Espanyol", League.LA_LIGA, 20, 7, 13),
+            Team("ATL. Madrid", League.LA_LIGA, 20, 12, 8),
+            Team("Sevilla", League.LA_LIGA, 20, 10, 10),
+            Team("Elche", League.LA_LIGA, 20, 6, 14),
+            Team("Ath Bilbao", League.LA_LIGA, 20, 8, 12),
+            Team("Alaves", League.LA_LIGA, 20, 7, 13),
+            Team("Getafe", League.LA_LIGA, 20, 6, 14),
+            Team("Osasuna", League.LA_LIGA, 20, 8, 12),
+            Team("Levante", League.LA_LIGA, 20, 5, 15),
+            Team("Rayo Vallecano", League.LA_LIGA, 20, 9, 11),
+            Team("Valencia", League.LA_LIGA, 20, 10, 10),
+            Team("Celta Vigo", League.LA_LIGA, 20, 8, 12),
+            Team("Girona", League.LA_LIGA, 20, 12, 8),
+            Team("R. Oviedo", League.LA_LIGA, 20, 6, 14),
+            Team("Real Sociedad", League.LA_LIGA, 20, 9, 11),
+            Team("Mallorca", League.LA_LIGA, 20, 7, 13),
+            
+            // CHAMPIONS LEAGUE
+            Team("Bayern Múnich", League.CHAMPIONS_LEAGUE, 20, 16, 4),
+            Team("Real Madrid", League.CHAMPIONS_LEAGUE, 20, 17, 3),
+            Team("PSG", League.CHAMPIONS_LEAGUE, 20, 15, 5),
+            Team("Inter", League.CHAMPIONS_LEAGUE, 20, 14, 6),
+            Team("Arsenal", League.CHAMPIONS_LEAGUE, 20, 15, 5),
+            Team("Qarabag", League.CHAMPIONS_LEAGUE, 20, 12, 8),
+            Team("Borussia Dortmund", League.CHAMPIONS_LEAGUE, 20, 13, 7),
+            Team("Manchester City", League.CHAMPIONS_LEAGUE, 20, 16, 4),
+            Team("Tottenham", League.CHAMPIONS_LEAGUE, 20, 14, 6),
+            Team("Atlético de Madrid", League.CHAMPIONS_LEAGUE, 20, 13, 7),
+            Team("Newcastle", League.CHAMPIONS_LEAGUE, 20, 11, 9),
+            Team("Marsella", League.CHAMPIONS_LEAGUE, 20, 12, 8),
+            Team("Club Brujas", League.CHAMPIONS_LEAGUE, 20, 10, 10),
+            Team("Sporting CP", League.CHAMPIONS_LEAGUE, 20, 13, 7),
+            Team("Eintracht Fráncfort", League.CHAMPIONS_LEAGUE, 20, 11, 9),
+            Team("Barcelona", League.CHAMPIONS_LEAGUE, 20, 14, 6),
+            Team("Liverpool", League.CHAMPIONS_LEAGUE, 20, 16, 4),
+            Team("Chelsea", League.CHAMPIONS_LEAGUE, 20, 13, 7),
+            Team("Nápoles", League.CHAMPIONS_LEAGUE, 20, 12, 8),
+            Team("Royale Union SG", League.CHAMPIONS_LEAGUE, 20, 9, 11),
+            Team("Galatasaray", League.CHAMPIONS_LEAGUE, 20, 11, 9),
+            Team("Atalanta", League.CHAMPIONS_LEAGUE, 20, 14, 6),
+            Team("Juventus", League.CHAMPIONS_LEAGUE, 20, 10, 10),
+            Team("Bodo/Glimt", League.CHAMPIONS_LEAGUE, 20, 8, 12),
+            Team("Bayer Leverkusen", League.CHAMPIONS_LEAGUE, 20, 15, 5),
+            Team("Villarreal", League.CHAMPIONS_LEAGUE, 20, 12, 8),
+            Team("PSV", League.CHAMPIONS_LEAGUE, 20, 13, 7),
+            Team("Copenhague", League.CHAMPIONS_LEAGUE, 20, 9, 11),
+            Team("Olympiacos", League.CHAMPIONS_LEAGUE, 20, 10, 10),
+            Team("Mónaco", League.CHAMPIONS_LEAGUE, 20, 12, 8),
+            Team("Slavia Praga", League.CHAMPIONS_LEAGUE, 20, 8, 12),
+            Team("Pafos", League.CHAMPIONS_LEAGUE, 20, 7, 13),
+            Team("Benfica", League.CHAMPIONS_LEAGUE, 20, 13, 7),
+            Team("Athletic Club", League.CHAMPIONS_LEAGUE, 20, 10, 10),
+            Team("Ajax", League.CHAMPIONS_LEAGUE, 20, 11, 9),
+            Team("Kairat Almaty", League.CHAMPIONS_LEAGUE, 20, 6, 14),
+            
+            // EUROPA LEAGUE
+            Team("Dinamo Zagreb", League.EUROPA_LEAGUE, 20, 12, 8),
+            Team("Midtjylland", League.EUROPA_LEAGUE, 20, 10, 10),
+            Team("Aston Villa", League.EUROPA_LEAGUE, 20, 13, 7),
+            Team("SC Braga", League.EUROPA_LEAGUE, 20, 11, 9),
+            Team("Lyon", League.EUROPA_LEAGUE, 20, 12, 8),
+            Team("Lille", League.EUROPA_LEAGUE, 20, 10, 10),
+            Team("Oporto", League.EUROPA_LEAGUE, 20, 14, 6),
+            Team("Plzen", League.EUROPA_LEAGUE, 20, 9, 11),
+            Team("Real Betis", League.EUROPA_LEAGUE, 20, 11, 9),
+            Team("Friburgo", League.EUROPA_LEAGUE, 20, 10, 10),
+            Team("Ferencvaros", League.EUROPA_LEAGUE, 20, 8, 12),
+            Team("Panathinaikos", League.EUROPA_LEAGUE, 20, 9, 11),
+            Team("Celta de Vigo", League.EUROPA_LEAGUE, 20, 8, 12),
+            Team("Basilea", League.EUROPA_LEAGUE, 20, 10, 10),
+            Team("Roma", League.EUROPA_LEAGUE, 20, 13, 7),
+            Team("G.A. Eagles", League.EUROPA_LEAGUE, 20, 7, 13),
+            Team("Brann", League.EUROPA_LEAGUE, 20, 6, 14),
+            Team("Genk", League.EUROPA_LEAGUE, 20, 9, 11),
+            Team("Young Boys", League.EUROPA_LEAGUE, 20, 11, 9),
+            Team("Fenerbahçe", League.EUROPA_LEAGUE, 20, 12, 8),
+            Team("Ludogorets", League.EUROPA_LEAGUE, 20, 8, 12),
+            Team("Sturm Graz", League.EUROPA_LEAGUE, 20, 7, 13),
+            Team("Stuttgart", League.EUROPA_LEAGUE, 20, 12, 8),
+            Team("FCSB", League.EUROPA_LEAGUE, 20, 9, 11),
+            Team("Nottingham Forest", League.EUROPA_LEAGUE, 20, 8, 12),
+            Team("Estrella Roja", League.EUROPA_LEAGUE, 20, 10, 10),
+            Team("Bolonia", League.EUROPA_LEAGUE, 20, 11, 9),
+            Team("PAOK", League.EUROPA_LEAGUE, 20, 9, 11),
+            Team("Celtic", League.EUROPA_LEAGUE, 20, 13, 7),
+            Team("Maccabi Tel Aviv", League.EUROPA_LEAGUE, 20, 8, 12),
+            Team("Niza", League.EUROPA_LEAGUE, 20, 10, 10),
+            Team("Rangers", League.EUROPA_LEAGUE, 20, 12, 8),
+            Team("Utrecht", League.EUROPA_LEAGUE, 20, 7, 13),
+            Team("Salzburgo", League.EUROPA_LEAGUE, 20, 11, 9),
+            Team("Feyenoord", League.EUROPA_LEAGUE, 20, 13, 7),
+            Team("Malmö", League.EUROPA_LEAGUE, 20, 9, 11)
+        )
+    }
+    
+    fun getTeamsByLeague(league: League): List<Team> {
+        return getAllTeams().filter { it.league == league }
+    }
+    
+    fun calculateMatchProbability(team1: Team, team2: Team): Float {
+        // Cálculo simple y directo
+        val team1Over25 = team1.over25Percentage
+        val team2Over25 = team2.over25Percentage
+        
+        // Promedio simple de ambos equipos
+        val averageProbability = (team1Over25 + team2Over25) / 2f
+        
+        // Factor de liga
+        val leagueFactor = when (team1.league) {
+            League.PREMIER_LEAGUE -> 1.1f
+            League.BUNDESLIGA -> 1.15f
+            League.SERIE_A -> 0.9f
+            League.LA_LIGA -> 1.05f
+            League.CHAMPIONS_LEAGUE -> 1.2f
+            League.EUROPA_LEAGUE -> 1.1f
+        }
+        
+        val finalProbability = averageProbability * leagueFactor
+        
+        return finalProbability.coerceIn(0f, 100f)
+    }
+}
